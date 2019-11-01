@@ -55,8 +55,7 @@ Exercises
 
 2. From The Below API Response Find Average Age & Ratio Of Sexes 
  
-  - URL : https://randomuser.me/api?results=10 
-
+ - URL : https://randomuser.me/api?results=10 
  - Calculate Average Age 
  - Ratio Of Male Vs Female 
 
