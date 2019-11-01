@@ -43,10 +43,28 @@ url = BASE_URL + str(num_of_results)
 
 
 def get_average(data):
+    """Returns the average of the list
+
+    Args: 
+        data: list of numbers for which we need average
+    
+    Returns:
+        average: average of the data. sum of data / num of data points 
+
+    """
     return sum(data) / len(data)
 
 
 def get_ratio(data):
+    """Returns the average of the list
+
+    Args: 
+        data: list containing the different items
+    
+    Returns:
+        ratio: dictonary of number of times a item is appearing in the list
+
+    """
     unique = set((data))
     count = {}
     for item in unique:
@@ -54,6 +72,8 @@ def get_ratio(data):
     for item in data:
         count[item] += 1/len(data)
     return count
+
+
 if __name__ == '__main__':
     response = get(url)
     if response.status_code == 200:
